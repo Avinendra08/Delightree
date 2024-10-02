@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "firstname": "Avinendra",
+      "lastname": "Singh",
+      "email": "avinendra08@gmail.com",
+      "number":"7307555232"
+    },
+    {
+      "id": 2,
+      "firstname": "Alok",
+      "lastname": "Kumar",
+      "email": "alok@gmail.com",
+      "number":"7312345678"
+    },
+    {
+      "id": 3,
+      "firstname": "Bhuvneshwar",
+      "lastname": "K",
+      "email": "bhuvi@gmail.com",
+      "number":"6789123450"
+    },
+    {
+      "id": 4,
+      "firstname": "Gaurav",
+      "lastname": "Khanna",
+      "email": "gaurav@gmail.com",
+      "number":"9415223778"
+    },
+    {
+      "id": 5,
+      "firstname": "Mikesh",
+      "lastname": "Singh",
+      "email": "mikesh@gmail.com",
+      "number":"7307454232"
+    }
+  ]
+  
