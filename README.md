@@ -3,7 +3,7 @@ This is a Node.js-based backend project designed for aggregating user activity d
 The project uses MongoDB to store data for users, posts, comments, likes, and views, and includes an advanced MongoDB aggregation pipeline to fetch the total activity per user age group.
 
 ## Prerequisites
-1. MongoDB running locally or on Atlas and its URL
+1. MongoDB running locally or on Atlas.(you can leave this part as it is running on atlas).
 2. Nodejs installed locally ([How to install NodeJS ?](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs))
 
 
