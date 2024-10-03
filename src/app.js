@@ -15,11 +15,22 @@ import postRouter from './routes/post.routes.js';
 import commentRouter from './routes/comment.routes.js';
 import likeRouter from "./routes/like.routes.js";
 import viewRouter from "./routes/view.routes.js";
+import userActivityRouter from "./routes/userDetailsByAge.routes.js"
+
+//question
+app.use("/getUserActivityByAgeRange",userActivityRouter);
 
 app.use("/comment",commentRouter);
 app.use("/user",userRouter);
 app.use("/post",postRouter);
-app.use("/likes",likeRouter);
+app.use("/like",likeRouter);
 app.use("/view",viewRouter);
 
 export { app }
+
+
+//total likes: 21
+//total posts: 10
+//total comment: 10
+//total views: 21
+//total users: 10
