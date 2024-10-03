@@ -3,8 +3,7 @@ import { User } from "../models/user.model.js";
 export const getUserActivityByAgeRange = asyncHandler(async (req, res) => {
   try {
     const result = await User.aggregate([
-      {
-        // Step 1: Group users into age ranges, including a range for users below 18
+      { //1st staging by age
         $addFields: {
           ageRange: {
             $switch: {
@@ -35,8 +34,7 @@ export const getUserActivityByAgeRange = asyncHandler(async (req, res) => {
           },
         },
       },
-      {
-        // Step 2: Lookup posts, comments, likes, and views in parallel
+      { //look up for post,comment,views and likes
         $lookup: {
           from: "posts",
           localField: "_id",
@@ -68,8 +66,7 @@ export const getUserActivityByAgeRange = asyncHandler(async (req, res) => {
           as: "userViews",
         },
       },
-      {
-        // Step 3: Group data by age range and calculate totals
+      { //last staging for output
         $group: {
           _id: "$ageRange",
           totalPosts: { $sum: { $size: "$userPosts" } },
